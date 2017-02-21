@@ -1,3 +1,3 @@
-var name = prompt('Wpisz swoje imię');
+// var name = prompt('Wpisz swoje imię');
 /* alert('Witaj, ' + name); */
-console.log('Witaj, ' + name);
+// console.log('Witaj, ' + name);
