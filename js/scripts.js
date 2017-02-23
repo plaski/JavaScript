@@ -3,7 +3,7 @@ function rysujChoinke(wysokoscChoinki) {
 		var star = '';
 
 		for (var n = 0; n < i*2-1; n++) {
-			 star += '*';
+			star += '*';
 		}
 		console.log(star);
 	}
