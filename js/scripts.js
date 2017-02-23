@@ -1,9 +1,9 @@
 function rysujChoinke(wysokoscChoinki) {
-	for (var i = 0; i < wysokoscChoinki; i++) {
+	for (var i = 1; i <= wysokoscChoinki; i++) {
 		var star = '';
-		
-		for (var i = 0; i < wysokoscChoinki*2-1; i++) {
-			star += '*';
+
+		for (var n = 0; n < i*2-1; n++) {
+			 star += '*';
 		}
 		console.log(star);
 	}
