@@ -1,3 +1,8 @@
-var name = prompt('Wpisz swoje imię');
-alert('Witaj, ' + name);
-console.log('Witaj, ' + name);
+var buttonClassElements = document.getElementsByClassName('button');
+var length = buttonClassElements.length;
+
+console.log(length);
+
+for (i = 0; i < length; i++){
+console.log(buttonClassElements[i].innerText);
+}
