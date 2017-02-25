@@ -40,7 +40,11 @@ function setGameElements() {
         resultFinalElem.style.display = 'none';
       break;
     case 'ended':
-        newGameBtn.innerText = 'Jeszcze raz';      
+        newGameBtn.innerText = 'Jeszcze raz';
+        pickElem.style.display = 'none';  
+        resultsElem.style.display = 'none';
+        resultFinalElem.style.display = 'block';
+        break;    
     case 'notStarted':
     default:
         newGameElem.style.display = 'block';
@@ -113,14 +117,12 @@ function checkPoints() {
 	if (player.score >= 10) {
 		gameState = 'ended';
     	setGameElements();
-        resultFinalElem.style.display = 'block';
-        gameWinner.innerText = 'Wygrałeś!!';
+        gameWinner.innerText = 'Wygrałeś!! ' + player.score + ' do ' + computer.score;
 	}
 	else if (computer.score >= 10) {
 		gameState = 'ended';
     	setGameElements();
-        resultFinalElem.style.display = 'block';
-        gameWinner.innerText = 'Przegrałeś!!';
+        gameWinner.innerText = 'Przegrałeś!! ' + player.score + ' do ' + computer.score;
 	}
 }
 
